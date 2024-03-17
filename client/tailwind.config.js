@@ -1,6 +1,7 @@
-const { addDynamicIconSelectors } = require('@iconify/tailwind');
+// const { addDynamicIconSelectors } = require('@iconify/tailwind');
 
 module.exports = {
+  // darkMode:'media',
   purge: [],
   //good thing but not doing right now, purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -10,10 +11,14 @@ module.exports = {
       fontFamilly: {
         poppins: ["Poppins", "sans-serif"],
         },
+        height:{
+          "1/10":"10%",
+          "9/10":"90%",
+        }
       },
     },
   variants: {
     extend: {},
   },
-  plugins: [addDynamicIconSelectors()],
+  plugins: [],
 }

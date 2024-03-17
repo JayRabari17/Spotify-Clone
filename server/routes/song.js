@@ -34,7 +34,8 @@ router.get('/get/mysongs',
     async (req,res)=>{
         const currentUser = req.user;
         //we need to get all songs whose artist id = user id
-        const songs = await song.find({artist:currentUser._id});
+        const songs = await song.find({artist:currentUser._id}).populate("artist");
+        // songs.map(data=>{delete data.artist.password});
         return res.status(200).json({data:songs})
 });
 

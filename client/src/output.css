@@ -6425,6 +6425,14 @@ video {
   height: 100vh;
 }
 
+.h-1\/10 {
+  height: 10%;
+}
+
+.h-9\/10 {
+  height: 90%;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -30229,6 +30237,12 @@ video {
   content: none;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face{
+  font-family: "Poppins";
+  src:url("../public/fonts/Poppins-Thin.ttf")
+} */
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -36051,6 +36065,14 @@ video {
 
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:h-1\/10 {
+    height: 10%;
+  }
+
+  .sm\:h-9\/10 {
+    height: 90%;
   }
 
   .sm\:max-h-0 {
@@ -65298,6 +65320,14 @@ video {
     height: 100vh;
   }
 
+  .md\:h-1\/10 {
+    height: 10%;
+  }
+
+  .md\:h-9\/10 {
+    height: 90%;
+  }
+
   .md\:max-h-0 {
     max-height: 0px;
   }
@@ -94541,6 +94571,14 @@ video {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:h-1\/10 {
+    height: 10%;
+  }
+
+  .lg\:h-9\/10 {
+    height: 90%;
   }
 
   .lg\:max-h-0 {
@@ -123788,6 +123826,14 @@ video {
     height: 100vh;
   }
 
+  .xl\:h-1\/10 {
+    height: 10%;
+  }
+
+  .xl\:h-9\/10 {
+    height: 90%;
+  }
+
   .xl\:max-h-0 {
     max-height: 0px;
   }
@@ -153031,6 +153077,14 @@ video {
 
   .\32xl\:h-screen {
     height: 100vh;
+  }
+
+  .\32xl\:h-1\/10 {
+    height: 10%;
+  }
+
+  .\32xl\:h-9\/10 {
+    height: 90%;
   }
 
   .\32xl\:max-h-0 {

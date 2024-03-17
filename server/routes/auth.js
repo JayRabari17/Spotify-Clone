@@ -8,8 +8,8 @@ router.post('/register',async (req,res)=>{
     //called when /register api is called for post request
     const {username,email,password,firstname,lastname} = req.body;
 
-    const user = await user.findOne({email:email});
-    if(user){
+    const User = await user.findOne({email:email});
+    if(User){
         //commonly 4.. code used for authentication errors
         return res.status(403).json({error:"A user already exists!"});
     }

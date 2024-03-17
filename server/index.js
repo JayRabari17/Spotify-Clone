@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const cors = require('cors');
 //env file contains different user pass for better sharing or ppublishing of files online without harming your personal database.
 //env file can be used to store pass for different funcs. like mongodb and will also hide data from sharing globallly while 
 //you are publishing your directory
@@ -13,8 +14,10 @@ const authRouter = require('./routes/auth');
 const songRouter = require('./routes/song');
 const playlistRouter = require('./routes/playlist');
 
+
 app = express();
 app.use(express.json());
+app.use(cors())
 
 // mongoose.connect('mongodb://localhost:27017').then((x)=>{
 //     console.log("Connected to DB!");
