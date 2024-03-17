@@ -79,7 +79,7 @@ const MyMusic = ()=>{
     },[]);
 
     return (
-        <LoggedInComponent>
+        <LoggedInComponent activePage={'mymusic'}>
                 <div className='song-area text-white w-full h-9/10 flex flex-col p-5'> 
                     <div className='songlist-area h-9/10'>
                     <div className='font-bold text-lg pl-4 p-3'>My Music</div>

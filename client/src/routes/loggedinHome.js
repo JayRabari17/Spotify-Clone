@@ -52,7 +52,7 @@ const LoggedInHomeComponent = ()=>{
     }
 
     return (
-       <LoggedInComponent>
+       <LoggedInComponent activePage={'home'}>
 
             <div className='body h-9/10 w-full  bg-black bg-opacity-50 overflow-auto'>
                 <CardrowView title="Focus" cardData={cardsData1}/>

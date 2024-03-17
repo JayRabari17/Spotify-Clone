@@ -6,7 +6,7 @@ import {Howl, Howler} from 'howler';
 import songContext from '../contexts/songContext';
 
 
-const LoggedInComponent = ({children})=>{
+const LoggedInComponent = ({children, activePage})=>{
 
     // const [songData,setsongData] = useState([])
     const {currentSong, setCurrentSong, soundPlayed, setsoundPlayed, isPaused, setIsPaused} = useContext(songContext)
@@ -64,10 +64,12 @@ const LoggedInComponent = ({children})=>{
             <div className="logo p-4 pb-4 border-b border-solid border-gray-200 w-full flex justify-center">
             <Icon icon="el:spotify" width="40"/>
             </div>
-            <div className='mt-8'><IconText iconName="ic:round-home" displayText="Home" targetLink='/home'/></div>
+            <div className='mt-8'><IconText iconName="ic:round-home" displayText="Home" targetLink='/home' 
+            active={activePage==='home'?true:false}/></div>
             <div className='mt-5'><IconText iconName="ic:round-search" displayText="Search"/></div>
             <div className='mt-5'><IconText iconName="fluent-mdl2:library" displayText="Library"/></div>
-             <div className='mt-5'><IconText iconName="fluent-mdl2:library" displayText="My Music" targetLink='/mymusic'/></div> 
+             <div className='mt-5'><IconText iconName="fluent-mdl2:library" displayText="My Music" targetLink='/mymusic' 
+             active={activePage==='mymusic'?true:false}/></div> 
             <div className='mt-12'><IconText iconName="material-symbols:add-box" displayText="Create Playlist"/></div>
             <div className='mt-5'><IconText iconName="icon-park-solid:like" displayText="Liked Songs"/></div>
             </div>
