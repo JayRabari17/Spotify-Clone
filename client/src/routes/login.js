@@ -29,7 +29,7 @@ const LoginComponent = ()=>{
                 //for 10 days
                 date.setDate(date.getDate()+10);
                 setCookie("token",token,{path:'/',expires:date})
-                // alert("Success");
+                // alert("Success" + token);
                 navigate('/home');
             }
             else{ 
