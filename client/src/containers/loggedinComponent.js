@@ -62,7 +62,7 @@ const LoggedInComponent = ({children, activePage})=>{
             <div className={`${currentSong? 'h-9/10': 'h-full'} flex`}>
             <div className='leftpanel h-full bg-black w-1/5'>
             <div className="logo p-4 pb-4 border-b border-solid border-gray-200 w-full flex justify-center">
-            <Icon icon="el:spotify" width="40"/>
+            <Link to='/home'> <Icon icon="el:spotify" width="40"/> </Link>
             </div>
             <div className='mt-8'><IconText iconName="ic:round-home" displayText="Home" targetLink='/home' 
             active={activePage==='home'?true:false}/></div>
@@ -75,7 +75,7 @@ const LoggedInComponent = ({children, activePage})=>{
             </div>
             <div className='rightbody h-full w-4/5'>
             <div className='navbar w-full h-1/10 bg-gray-900 flex items-center justify-end pr-10'>
-                <Link to='/signup'><div className='text-gray-400 hover:text-white cursor-pointer'> Upload Song</div></Link>
+                {/* <Link to='/signup'><div className='text-gray-400 hover:text-white cursor-pointer'> Upload Song</div></Link> */}
                 <div className='login-button ml-4 p-6 bg-white flex items-center justify-center h-1/2 rounded-full cursor-pointer'>
                 {/* <Link to='/login'>*/}
                 <div className='text-gray-600 hover:text-black font-semibold'>User</div> 

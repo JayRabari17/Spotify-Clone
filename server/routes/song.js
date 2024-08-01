@@ -29,6 +29,12 @@ router.post('/create',
         return res.status(200).json(songCreated);
 });
 
+router.get('/get/allsongs',
+    async (req,res)=>{
+        const songs = await song.find();
+        // songs.map(data=>{delete data.artist.password});
+        return res.status(200).json({data:songs})
+});
 
 router.get('/get/mysongs',
     async (req,res)=>{
@@ -38,6 +44,7 @@ router.get('/get/mysongs',
         // songs.map(data=>{delete data.artist.password});
         return res.status(200).json({data:songs})
 });
+
 
 
 router.get('/get/artist-song',async (req,res)=>{

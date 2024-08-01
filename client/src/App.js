@@ -23,7 +23,7 @@ function App() {
     <div className="bg-gray-800 text-white font-poppins w-screen h-screen">
       <BrowserRouter>
       {/* if cookie.token exist then login and signup should not open */}
-        {cookie.token ? (
+        {cookie.token!=null ? (
           <songContext.Provider value={{currentSong, setCurrentSong, soundPlayed, setsoundPlayed, isPaused, setIsPaused}}>
 
           <Routes> {/*This component indicates to package react-router-dom that we are starting to define our routes inside this*/}
@@ -51,6 +51,6 @@ function App() {
 
 // const HelloComponent = ()=>{
 //   return <div>Hello from component!</div>
-// }
+//}
 
 export default App;
